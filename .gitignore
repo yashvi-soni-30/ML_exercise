@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated model files
+models/*.pkl
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
