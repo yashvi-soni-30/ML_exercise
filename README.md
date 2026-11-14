@@ -46,3 +46,27 @@ The model is evaluated using:
 - Compare multiple algorithms
 - Add data visualization
 - Perform hyperparameter tuning
+
+## Dataset Information
+
+We use the Iris dataset provided by Scikit-learn.
+
+### Features
+- Sepal length
+- Sepal width
+- Petal length
+- Petal width
+
+### Target Classes
+- Setosa
+- Versicolor
+- Virginica
+
+### Model
+K-Nearest Neighbors (KNN)
+
+### Evaluation Metrics
+- Accuracy
+- Precision
+- Recall
+- F1-score
