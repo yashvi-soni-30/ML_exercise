@@ -2,9 +2,9 @@ name: Docker Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   docker:
@@ -13,6 +13,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Verify project files
+        run: |
+          pwd
+          ls -la
+          git ls-files
+          test -f Dockerfile && echo "Dockerfile found" || echo "Dockerfile missing"
 
       - name: Build Docker image
         run: docker build -t iris-ml-app .
